@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--
+1.表单中应制定提交的请求为multiparty请求 ： enctype="multipart/form-data"
+只有使用上面的才能把文件内容上传
+
+2.表单中请求提交的方式必须是POST
+
+
+-->
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <input type="file" name="upfile" multiple = "multiple" value="请选择上传文件" ><br>
+ <input type="submit" value="上传">
+</form>
+
+</body>
+</html>
